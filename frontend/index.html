@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitConnect - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">FitConnect</div>
+      <ul>
+        <li><a href="#"><b>Home</b></a></li>
+        <li><a href="browseroutine.html"><b>Explore Routines</b></a></li>
+        <li><a href="createRoutine.html"><b>Share your Routine</b></a></li>
+        <!-- <li><a href="profile.html"><b>Profile</b></a></li> -->
+        <li id="authLink"><a href="login.html"><b>Login</b></a></li>
+        <li><a href="register.html"><b>Register</b></a></li>
+        <li><a href="aboutus.html"><b>About Us</b></a></li>
+        <li id="logoutLink" style="display: none;"><a href="#"><b>Logout</b></a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- <section class="hero">
+      <h1></h1>
+      <p>Share your fitness journey and challenge yourself!</p>
+      <a href="createRoutine.html" class="cta-button">Create New Routine</a>
+    </section> -->
+      <!-- hero -->
+      <div class="bigbox">
+
+            <section>
+                <div class="hero-sec">
+                <div id="hero-headline">
+                    <div class="main">
+                        <h1><span>Fit</span>Connect
+                   
+                    </div>
+                    </h1>
+                    <hr>
+                    <h2 ><b>Join the Fitness Revolution – Share, Challenge, Grow!</b></h2>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </div>
+
+    <!-- Popular Routines Section -->
+    <section class="popular-routines">
+        <center><h2><b>Some of the popular workout routines! </b></h2></center>
+      
+      <div class="routine-list" id="routine-list">
+        <!-- Routine cards will be injected here -->
+      </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <!-- <script>
+        // Check if user is logged in
+        fetch("http://localhost:5500/api/users/checkAuth", {
+          credentials: "include" // Include cookies
+        })
+        .then(response => {
+          if (response.ok) {
+            document.getElementById("loginLink").innerText = "Username"; // Change to username
+            document.getElementById("logoutButton").style.display = "block"; // Show logout button
+          }
+        });
+      
+        // Logout functionality
+        document.getElementById("logoutButton").addEventListener("click", async () => {
+          const response = await fetch("http://localhost:5500/api/users/logout", {
+            method: "POST",
+            credentials: "include" // Include cookies
+          });
+      
+          if (response.ok) {
+            alert("Logged out successfully!");
+            window.location.reload(); // Reload to update navbar
+          }
+        });
+      </script> -->
+    <!-- Link to the JavaScript file -->
+  </body>
+</html>

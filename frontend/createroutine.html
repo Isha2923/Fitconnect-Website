@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Routine</title>
+    <link rel="stylesheet" href="css/createroutine.css" />
+  </head>
+  <body>
+    <h1>Share Your Routine</h1>
+    <form id="routineForm">
+      <label
+        ><b>Username:</b> <input type="text" id="username" required /></label
+      ><br />
+      <label><b>Title:</b> <input type="text" id="title" required /></label
+      ><br />
+      <label
+        ><b>Description:</b> </label>
+        <textarea id="description" required></textarea></label
+      ><br />
+      <label
+        ><b>Difficulty:</b>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select> </label
+      ><br />
+      <label
+        ><b>Duration (minutes):</b>
+        <input type="number" id="duration" required /></label
+      ><br />
+      <label
+        ><b>Upload Image/Video:</b>
+        <input
+          type="file"
+          id="file"
+          name="file"
+          accept="image/*, video/*"
+          required /></label
+      ><br />
+      <button type="submit">Create Routine</button>
+    </form>
+     
+    <script src="js/createroutine.js"></script>
+   
+    <!--<script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const username = localStorage.getItem('username');
+        if (!username) {
+          // If user is not logged in, redirect them to the login page
+          alert('You must be logged in to create a routine!');
+          window.location.href = 'login.html';
+        }
+      });
+    </script> -->
+    
+  </body>
+</html>
