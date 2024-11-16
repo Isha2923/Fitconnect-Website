@@ -69,7 +69,7 @@ const jwtSecret = process.env.JWT_SECRET;
 // Middleware
 app.use(
   cors({
-    origin: "https://fit-connect-kohl.vercel.app", // Replace with your frontend URL
+    origin: "https://fitconnect-website.vercel.app", // Replace with your frontend URL
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true, // Allow cookies to be sent with requests
   })
